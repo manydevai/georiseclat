@@ -31,6 +31,7 @@ const translations = {
                 "garantie au quotidien."
             ],
             description: "Entretien ménager commercial et institutionnel à Montréal, Laval et Longueuil.",
+            tagline: "L’éclat au service de votre environnement",
             cta_quote: "Devis gratuit",
             cta_services: "Nos services"
         },
@@ -42,18 +43,39 @@ const translations = {
         },
         why_choose_us: {
             subtitle: "Pourquoi nous choisir",
-            title: "Une expertise reconnue depuis 2024",
-            experience: "2 ans",
+            title: "Une expertise reconnue depuis 2023",
+            experience: "3 ans",
             experience_label: "d’expérience",
             clients_label: "clients actifs",
             description_1: "Georis Éclat Nettoyage est le partenaire de confiance pour l'entretien de vos locaux professionnels et résidentiels dans la région de Montréal.",
             description_2: "Notre approche repose sur trois piliers : la rigueur de nos protocoles, la formation continue de nos agents et l'utilisation de produits respectueux de l'environnement.",
-            clients_count: "21+"
+            clients_count: "21+",
+            engagements: [
+                "Service professionnel et personnalisé",
+                "Respect des normes d’hygiène et de sécurité",
+                "Personnel fiable et formé",
+                "Produits écologiques et méthodes responsables",
+                "Satisfaction et confiance de nos clients au cœur de nos priorités"
+            ]
+        },
+        mission: {
+            title: "Notre mission",
+            text: "Offrir des services d’entretien ménager de qualité supérieure en alliant efficacité, fiabilité et respect de l’environnement. Notre objectif est de créer des espaces impeccables où il fait bon vivre, travailler et recevoir."
         },
         services_section: {
             subtitle: "Nos Solutions de Nettoyage",
             title: "Des services sur mesure pour chaque besoin",
-            description: "Nous proposons une gamme complète de services de nettoyage professionnel, adaptés aux exigences spécifiques de chaque secteur d'activité."
+            description: "Nous proposons une gamme complète de services de nettoyage professionnel, adaptés aux exigences spécifiques de chaque secteur d'activité.",
+            highlights_title: "Ce qui nous distingue dans nos interventions",
+            highlights: [
+                "Entretien ménager régulier (quotidien, plusieurs fois par semaine ou hebdomadaire)",
+                "Nettoyage complet de bureaux, commerces et immeubles administratifs",
+                "Entretien d'établissements municipaux et institutionnels",
+                "Lavage, décapage et entretien de planchers",
+                "Nettoyage après travaux, rénovations ou événements",
+                "Entretien des aires communes et installations sanitaires",
+                "Utilisation de produits écologiques respectueux de l'environnement"
+            ]
         },
         areas: {
             title: "Zones d'intervention",
@@ -189,6 +211,7 @@ const translations = {
                 "guaranteed daily."
             ],
             description: "Commercial and institutional cleaning services in Montreal, Laval, and Longueuil.",
+            tagline: "Brilliance at the service of your environment",
             cta_quote: "Get free quote",
             cta_services: "Our Services"
         },
@@ -200,18 +223,39 @@ const translations = {
         },
         why_choose_us: {
             subtitle: "Why Choose Us",
-            title: "Recognized Expertise Since 2024",
-            experience: "2 years",
+            title: "Recognized Expertise Since 2023",
+            experience: "3 years",
             experience_label: "of experience",
             clients_label: "active clients",
             description_1: "Georis Éclat Nettoyage is the trusted partner for the maintenance of your professional and residential premises in the Montreal area.",
             description_2: "Our approach is based on three pillars: rigorous protocols, continuous training of our agents, and the use of environmentally friendly products.",
-            clients_count: "21+"
+            clients_count: "21+",
+            engagements: [
+                "Professional and personalized service",
+                "Compliance with hygiene and safety standards",
+                "Reliable and trained staff",
+                "Eco-friendly products and responsible methods",
+                "Customer satisfaction and trust at the heart of our priorities"
+            ]
+        },
+        mission: {
+            title: "Our Mission",
+            text: "To offer top-quality cleaning services by combining efficiency, reliability, and respect for the environment. Our goal is to create spotless spaces where it is a pleasure to live, work, and welcome guests."
         },
         services_section: {
             subtitle: "Our Cleaning Solutions",
             title: "Tailored services for every need",
-            description: "We offer a full range of professional cleaning services, adapted to the specific requirements of each business sector."
+            description: "We offer a full range of professional cleaning services, adapted to the specific requirements of each business sector.",
+            highlights_title: "What sets our interventions apart",
+            highlights: [
+                "Regular cleaning (daily, multiple times a week, or weekly)",
+                "Complete cleaning of offices, businesses, and administrative buildings",
+                "Maintenance of municipal and institutional facilities",
+                "Floor washing, stripping, and maintenance",
+                "Thorough cleaning after construction, renovations, or events",
+                "Rigorous maintenance of common areas and sanitary facilities",
+                "Use of eco-friendly, environmentally friendly products"
+            ]
         },
         areas: {
             title: "Service Areas",

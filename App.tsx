@@ -340,8 +340,11 @@ const HomePage: React.FC = () => {
                                     phrases={t('hero.phrases')}
                                 />
                             </h1>
-                            <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-xl leading-relaxed">
+                            <p className="text-lg md:text-xl text-gray-700 mb-3 max-w-xl leading-relaxed">
                                 {t('hero.description')}
+                            </p>
+                            <p className="text-base md:text-lg text-primary font-semibold mb-8 italic max-w-xl">
+                                {t('hero.tagline')}
                             </p>
 
                             {/* CTA Buttons */}
@@ -442,6 +445,24 @@ const HomePage: React.FC = () => {
                             </div>
                         ))}
                     </div>
+
+                    {/* Checklist of service highlights */}
+                    <div className="mt-16 bg-background-light dark:bg-background-dark/50 p-8 rounded-2xl shadow-md border border-gray-100 dark:border-gray-800 reveal-element">
+                        <h3 className="text-xl font-display font-bold mb-6 text-center text-text-light-primary dark:text-text-dark-primary">
+                            {t('services_section.highlights_title')}
+                        </h3>
+                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                            {(t('services_section.highlights') as string[]).map((highlight, idx) => (
+                                <div key={idx} className="flex items-start gap-3">
+                                    <span className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 text-primary mt-0.5">
+                                        <span className="material-icons text-sm">done</span>
+                                    </span>
+                                    <p className="text-text-light-secondary dark:text-text-dark-secondary text-sm leading-relaxed">{highlight}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
                     <div className="text-center mt-12 reveal-element">
                         <p className="text-text-light-secondary dark:text-text-dark-secondary mb-4">
                             {t('areas.specific_need.title')}
@@ -496,6 +517,36 @@ const HomePage: React.FC = () => {
                             />
                             <div className="cinematic-image-overlay-premium"></div>
                             <div className="cinematic-image-stripe-premium"></div>
+                        </div>
+                    </div>
+
+                    {/* Mission and Commitments Row */}
+                    <div className="mt-16 pt-16 border-t border-gray-100 dark:border-gray-800/80 grid md:grid-cols-2 gap-12">
+                        {/* Mission Column */}
+                        <div className="reveal-element">
+                            <h3 className="text-2xl font-display font-bold text-text-light-primary dark:text-text-dark-primary mb-5 flex items-center gap-2.5">
+                                <span className="material-icons-outlined text-primary text-2xl">track_changes</span>
+                                {t('mission.title')}
+                            </h3>
+                            <p className="text-text-light-secondary dark:text-text-dark-secondary leading-relaxed italic text-lg border-l-4 border-primary pl-4 py-1">
+                                "{t('mission.text')}"
+                            </p>
+                        </div>
+
+                        {/* Commitments Column */}
+                        <div className="reveal-element">
+                            <h3 className="text-2xl font-display font-bold text-text-light-primary dark:text-text-dark-primary mb-5 flex items-center gap-2.5">
+                                <span className="material-icons-outlined text-primary text-2xl">task_alt</span>
+                                {language === 'fr' ? 'Nos engagements' : 'Our commitments'}
+                            </h3>
+                            <ul className="space-y-3.5">
+                                {(t('why_choose_us.engagements') as string[]).map((engagement, idx) => (
+                                    <li key={idx} className="flex items-start gap-3 text-text-light-secondary dark:text-text-dark-secondary">
+                                        <span className="material-icons text-primary text-xl mt-0.5">check_circle</span>
+                                        <span className="font-medium">{engagement}</span>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                 </div>
