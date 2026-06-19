@@ -150,7 +150,7 @@ const translations = {
             email: "Email : info@georiseclat.com",
             neq: "NEQ : [Votre numéro d'entreprise du Québec]",
             hosting: "Hébergement",
-            hosting_info: "Le site est hébergé par Netlify, Inc., 44 Montgomery Street, Suite 300, San Francisco, CA 94104.",
+            hosting_info: "Le site est hébergé par Hostinger International Ltd., 61 Lordou Vironos Street, 6023 Larnaca, Chypre.",
             intellectual_property: "Propriété Intellectuelle",
             ip_info: "L'ensemble du contenu de ce site (textes, images, logos, etc.) est la propriété exclusive de Georis Éclat Nettoyage. Toute reproduction sans autorisation préalable est interdite."
         },
@@ -308,7 +308,7 @@ const translations = {
             email: "Email: info@georiseclat.com",
             neq: "NEQ: [Your Quebec Enterprise Number]",
             hosting: "Hosting",
-            hosting_info: "This site is hosted by Netlify, Inc., 44 Montgomery Street, Suite 300, San Francisco, CA 94104.",
+            hosting_info: "This site is hosted by Hostinger International Ltd., 61 Lordou Vironos Street, 6023 Larnaca, Cyprus.",
             intellectual_property: "Intellectual Property",
             ip_info: "All content on this site (text, images, logos, etc.) is the exclusive property of Georis Éclat Nettoyage. Any reproduction without prior authorization is prohibited."
         },
