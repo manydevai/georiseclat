@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
                         </h4>
                         <ul className="space-y-3 mt-4">
                             <li><a className="footer-link-premium hover:text-green-400 transition-all duration-300 inline-block" href="/#/#qui-sommes-nous">{t('footer.our_story')}</a></li>
-                            <li><a className="footer-link-premium hover:text-green-400 transition-all duration-300 inline-block" href="/#/#contact">{t('footer.careers')}</a></li>
+                            <li><Link className="footer-link-premium hover:text-green-400 transition-all duration-300 inline-block" to="/" state={{ scrollTo: 'contact-form', selectService: 'candidate' }}>{t('footer.careers')}</Link></li>
                             <li><Link className="footer-link-premium hover:text-green-400 transition-all duration-300 inline-block" to="/mentions-legales">{t('footer.legal')}</Link></li>
                             <li><Link className="footer-link-premium hover:text-green-400 transition-all duration-300 inline-block" to="/politique-de-confidentialite">{t('footer.privacy')}</Link></li>
                         </ul>

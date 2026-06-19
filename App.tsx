@@ -235,8 +235,11 @@ const HomePage: React.FC = () => {
 
     // Handle scrollTo state from navigation (e.g. Header nav from other pages)
     useEffect(() => {
-        const state = location.state as { scrollTo?: string } | null;
+        const state = location.state as { scrollTo?: string; selectService?: string } | null;
         if (state?.scrollTo) {
+            if (state.selectService) {
+                setServiceType(state.selectService);
+            }
             // Small delay to ensure the DOM is fully rendered
             const timer = setTimeout(() => {
                 scrollToSection(state.scrollTo!);
@@ -300,7 +303,13 @@ const HomePage: React.FC = () => {
         <div className="relative min-h-screen font-body bg-background-light dark:bg-background-dark text-text-light-primary dark:text-text-dark-primary transition-colors duration-300">
             <div className="grain-overlay"></div>
 
-            <Header isScrolled={isHeaderScrolled} />
+            <Header 
+                isScrolled={isHeaderScrolled} 
+                onCareerClick={() => {
+                    setServiceType('candidate');
+                    scrollToSection('contact-form');
+                }}
+            />
 
             {/* ============================================
                 HERO SECTION - Full background image with text overlay

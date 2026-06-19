@@ -5,9 +5,10 @@ import { useLanguage } from '../LanguageContext';
 
 interface HeaderProps {
     isScrolled?: boolean;
+    onCareerClick?: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ isScrolled = false }) => {
+export const Header: React.FC<HeaderProps> = ({ isScrolled = false, onCareerClick }) => {
     const { t } = useLanguage();
     const location = useLocation();
     const navigate = useNavigate();
@@ -16,6 +17,15 @@ export const Header: React.FC<HeaderProps> = ({ isScrolled = false }) => {
 
     const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>, id: string) => {
         e.preventDefault();
+        if (id === 'careers') {
+            if (onCareerClick) {
+                onCareerClick();
+            } else {
+                navigate('/', { state: { scrollTo: 'contact-form', selectService: 'candidate' } });
+            }
+            setIsMenuOpen(false);
+            return;
+        }
         if (isHome) {
             requestAnimationFrame(() => {
                 const element = document.getElementById(id);
@@ -60,6 +70,7 @@ export const Header: React.FC<HeaderProps> = ({ isScrolled = false }) => {
         { id: 'temoignages', label: t('nav.testimonials') },
         { id: 'faq', label: t('nav.faq') },
         { id: 'areas', label: t('nav.areas') },
+        { id: 'careers', label: t('nav.careers') },
         { id: 'contact', label: t('nav.contact') },
     ];
 

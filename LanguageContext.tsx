@@ -21,6 +21,7 @@ const translations = {
             faq: "FAQ",
             areas: "Zones",
             contact: "Contact",
+            careers: "Carrière",
             quote: "Devis gratuit"
         },
         hero: {
@@ -114,7 +115,7 @@ const translations = {
                 commercial: "Nettoyage Commercial",
                 construction: "Fin de Chantier",
                 windows: "Nettoyage de Vitres",
-                candidate: "Candidat à un emploi",
+                candidate: "Carrière",
                 other: "Autre"
             }
         },
@@ -178,6 +179,7 @@ const translations = {
             faq: "FAQ",
             areas: "Areas",
             contact: "Contact",
+            careers: "Career",
             quote: "Get free quote"
         },
         hero: {
@@ -271,7 +273,7 @@ const translations = {
                 commercial: "Commercial Cleaning",
                 construction: "Post-Construction",
                 windows: "Window Cleaning",
-                candidate: "Job Candidate",
+                candidate: "Career",
                 other: "Other"
             }
         },
