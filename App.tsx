@@ -446,22 +446,6 @@ const HomePage: React.FC = () => {
                         ))}
                     </div>
 
-                    {/* Checklist of service highlights */}
-                    <div className="mt-16 bg-background-light dark:bg-background-dark/50 p-8 rounded-2xl shadow-md border border-gray-100 dark:border-gray-800 reveal-element">
-                        <h3 className="text-xl font-display font-bold mb-6 text-center text-text-light-primary dark:text-text-dark-primary">
-                            {t('services_section.highlights_title')}
-                        </h3>
-                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-4">
-                            {(t('services_section.highlights') as string[]).map((highlight, idx) => (
-                                <div key={idx} className="flex items-start gap-3">
-                                    <span className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 text-primary mt-0.5">
-                                        <span className="material-icons text-sm">done</span>
-                                    </span>
-                                    <p className="text-text-light-secondary dark:text-text-dark-secondary text-sm leading-relaxed">{highlight}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
 
                     <div className="text-center mt-12 reveal-element">
                         <p className="text-text-light-secondary dark:text-text-dark-secondary mb-4">
@@ -542,7 +526,7 @@ const HomePage: React.FC = () => {
                             <ul className="space-y-3.5">
                                 {(t('why_choose_us.engagements') as string[]).map((engagement, idx) => (
                                     <li key={idx} className="flex items-start gap-3 text-text-light-secondary dark:text-text-dark-secondary">
-                                        <span className="material-icons text-primary text-xl mt-0.5">check_circle</span>
+                                        <span className="material-icons-outlined text-primary text-xl mt-0.5">check_circle</span>
                                         <span className="font-medium">{engagement}</span>
                                     </li>
                                 ))}
